@@ -114,3 +114,9 @@ body {
 div.job>p {
     margin-bottom: 5px;
 }
+h2.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
