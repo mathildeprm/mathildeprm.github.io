@@ -107,4 +107,10 @@ div.right {
     padding-top: 10px;
 }
 
-body {padding-top: 13px;}
+body {
+    padding-top: 13px;
+}
+
+div.job>p {
+    margin-bottom: 5px;
+}
