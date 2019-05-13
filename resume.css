@@ -36,6 +36,7 @@ h3 {
 }
 
 h4 {font-size: 20px;
+    font-weight: bold;
 }
 
 h5 {font-size: 15px;}
@@ -120,3 +121,8 @@ h2.title {
     margin-top: 25px;
     margin-bottom: 16px;
 }
+
+p {
+    text-indent:20px;
+}
+
