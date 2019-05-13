@@ -92,11 +92,12 @@ ul {
 }
 
 .informations {
-    font-style:italic;
+    font-style: italic;
+    font-weight: 100;
 }
 
 .name {
-    font-weight: bold; 
+    font-weight: 500; 
     font-size: 25;
 }
 .chronologie {
@@ -141,6 +142,7 @@ h2.title {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .larger {
