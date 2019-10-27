@@ -35,6 +35,11 @@
    }
 }
 
+@media (max-width: 768px) {
+    .informations { 
+        font-size: 100%;
+    }
+}
 
 body {
     font-family: 'Raleway', sans-serif;
