@@ -33,6 +33,13 @@
        z-index: 1;
        border-bottom: 2rem solid #337ab7;
    }
+
+   div.job>h4, div.job>h5 {
+       margin-block-end: initial;
+   }
+   div.job>h4 {
+       margin-top: 5px;
+   }
 }
 
 .col-2 chronologie italic {font-style: italic;}
