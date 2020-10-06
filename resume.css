@@ -11,7 +11,7 @@
        font-size: 130%;
    }
 
-/* as per 
+/* as per
  * https://stackoverflow.com/questions/44284361/bootstrap-progress-bar-is-not-shown-in-print-preview
  */
    .progress {
@@ -83,13 +83,9 @@ h5 {font-size: 15px;
 }
 
 
-h6 {font-size: 13px;} 
+h6 {font-size: 13px;}
 
 p {line-height: 1.2;}
-
-li.list-group-item {
-    border-bottom: 1px;
-}
 
 .list-group>li.list-group-item  {
     font-size:115%;
@@ -123,16 +119,16 @@ ul {
 }
 
 .name {
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 25;
 }
 .chronologie {
-    text-align:center;
+    text-align: center;
     font-style: oblique;
     font-size: 15px;
 }
 .category {
-    text-align:center;
+    text-align: center;
     font-style: oblique;
 }
 
