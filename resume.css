@@ -4,8 +4,11 @@
     }
    body {
        margin-top: 1cm;
-       margin-left: 1.6cm;
+       margin-left: 1.2cm;
        margin-right: 1.6cm;
+   }
+   #skills-languages {
+       padding-right: 30px;
    }
 
 /* as per 
@@ -40,6 +43,11 @@
    div.job>h4 {
        margin-top: 5px;
    }
+}
+
+#details {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .col-2 chronologie italic {font-style: italic;}
@@ -156,6 +164,16 @@ div.right {
 
 }
 
+/* to add extra space above 'Skills'
+ * no longer looks needed though
+#skills-languages #skills{
+    padding-top: 30px;
+}
+ */
+
+#skills-languages {
+    border-right: 1px double #ddd;
+}
 #skills-languages h3 {
     padding-top: 10px;
 }
