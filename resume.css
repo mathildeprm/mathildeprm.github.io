@@ -61,7 +61,8 @@
 
 #details {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .col-2 chronologie italic {font-style: italic;}
