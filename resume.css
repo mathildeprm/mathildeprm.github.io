@@ -90,18 +90,18 @@ h3 {
 
 h3.title {color: #980004;
         font-weight: 600;
-        font-size: 25px; 
+        font-size: 25px;
         padding-bottom: 0px;
         margin-bottom: 0px;
 }
 
 h3.title3 {color: #980004;
     font-weight: 600;
-    font-size: 23px; 
+    font-size: 23px;
     padding-bottom: 0px;
     margin-bottom: 0px;
     margin-top:25px;
-    
+
 }
 
 hr {width: 90%;
@@ -280,4 +280,8 @@ span.neutral {
 }
 .shiftright {
     text-indent: 20px;
+}
+
+div.exp>div {
+    padding-bottom: 10px;
 }
