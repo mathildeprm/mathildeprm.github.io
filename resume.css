@@ -10,10 +10,10 @@
    #skills-languages h3 {
        font-size: 130%;
    }
-
 /* as per
  * https://stackoverflow.com/questions/44284361/bootstrap-progress-bar-is-not-shown-in-print-preview
  */
+
    .progress {
        position: relative;
    }
@@ -74,7 +74,10 @@ h3 {
 
 h4 {font-size: 20px;
     font-weight: bolder;
+}
 
+.less-important {font-size: 18px;
+                 font-weight: 500;
 }
 
 h5 {font-size: 15px;
@@ -82,6 +85,19 @@ h5 {font-size: 15px;
     font-style: italic;
 }
 
+.date-work {font-size: 20px;
+    font-weight: 500;
+    padding-top:4px;
+}
+
+.date {font-size: 20px;
+    font-weight: 500;
+}
+
+.period {font-size: 15px;
+         font-style: italic;
+         font-weight: lighter;
+}
 
 h6 {font-size: 13px;}
 
@@ -120,13 +136,18 @@ ul {
 
 .name {
     font-weight: 500;
-    font-size: 25;
+    font-size: 28;
+    padding-left: 40px;
 }
 .chronologie {
     text-align: center;
     font-style: oblique;
     font-size: 15px;
 }
+
+
+
+
 .category {
     text-align: center;
     font-style: oblique;
