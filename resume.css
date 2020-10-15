@@ -276,3 +276,6 @@ p {
 span.neutral {
     font-weight: normal;
 }
+.shiftright {
+    text-indent: 20px;
+}
