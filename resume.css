@@ -6,7 +6,17 @@
        margin-top: 1cm;
        margin-left: 0cm;
        margin-right: 1.6cm;
+       -webkit-print-color-adjust: exact;
    }
+
+
+
+
+   tr{
+    background-color:#d5ffc3 !important;
+  }
+
+
    #skills-languages h3 {
        font-size: 130%;
    }
@@ -17,6 +27,9 @@
    .progress {
        position: relative;
    }
+
+
+
    .progress:before {
        display: block;
        content: '';
@@ -35,6 +48,7 @@
        left: 0;
        z-index: 1;
        border-bottom: 2rem solid #337ab7;
+       background-color: black;
    }
 
    div.job>h4, div.job>h5 {
@@ -93,7 +107,6 @@ hr {width: 90%;
     margin-right: auto;
     margin-top:5px;
     height: 15px;
-    color: #980004;
     margin-bottom: 2px;
 }
 
@@ -168,7 +181,7 @@ ul {
 
 .name {
     font-weight: 500;
-    font-size: 28;
+    font-size: 30px;
     padding-left: 40px;
 }
 .chronologie {
