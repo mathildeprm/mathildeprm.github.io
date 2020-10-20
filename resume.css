@@ -59,7 +59,9 @@
 /* -------------- */
 body {
     font-family: 'Raleway', sans-serif;
+    padding-top: 13px;
 }
+
 
 h1 {
     font-size:27px;
@@ -146,10 +148,6 @@ h6 {font-size: 13px;}
 
 p {line-height: 1.2;}
 
-.list-group>li.list-group-item  {
-    font-size:115%;
-}
-
 .alert.alert-secondary {
     padding: 6px;
     border-radius: 20px;
@@ -210,6 +208,26 @@ ul {
     font-style: oblique;
 }
 
+#skills-languages {
+    border-left: 1px double #ddd;
+}
+#skills-languages h3 {
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.list-group>li.list-group-item  {
+    font-size:115%;
+}
+@media only screen and (max-width: 1000px) {
+    .list-group>li.list-group-item {
+        font-size: 14px;
+    }
+    #skills-languages h3 {
+        font-size: 20px;
+    }
+}
+
 .list-group-item {
     text-align: center;
 }
@@ -246,16 +264,6 @@ div.right {
 }
  */
 
-#skills-languages {
-    border-left: 1px double #ddd;
-}
-#skills-languages h3 {
-    padding-top: 10px;
-}
-
-body {
-    padding-top: 13px;
-}
 
 div.job>p {
     margin-bottom: 5px;
