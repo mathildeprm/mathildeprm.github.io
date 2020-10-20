@@ -2,22 +2,21 @@
     @page {
         margin: 0;
     }
-   body {
-       margin-top: 1cm;
-       margin-left: 1cm;
-       margin-right: 1cm;
-       -webkit-print-color-adjust: exact;
-   }
+    body {
+        margin-top: 1cm;
+        margin-left: 0cm;
+        margin-right: .8cm;
+        -webkit-print-color-adjust: exact;
+    }
 
+    tr {
+        background-color:#d5ffc3 !important;
+    }
 
-   tr {
-    background-color:#d5ffc3 !important;
-  }
+    #skills-languages h3 {
+        font-size: 130%;
+    }
 
-
-   #skills-languages h3 {
-       font-size: 130%;
-   }
 /* as per
  * https://stackoverflow.com/questions/44284361/bootstrap-progress-bar-is-not-shown-in-print-preview
  */
@@ -57,14 +56,7 @@
    }
 }
 
-#details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 60px;
-}
-
-.col-2 chronologie italic {font-style: italic;}
+/* -------------- */
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -129,6 +121,13 @@ h5 {font-size: 18px;
 
 }
 
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 60px;
+}
+
 .date-work {font-size: 20px;
     font-weight: 500;
     padding-top:4px;
@@ -184,13 +183,26 @@ ul {
     font-size: 30px;
     padding-left: 40px;
 }
+
+.col-2 chronologie italic {
+    font-style: italic;
+}
+
 .chronologie {
-    text-align: center;
+    text-align: right;
     font-style: oblique;
     font-size: 15px;
 }
+/* 768 is the limit for .col-md- classes */
+@media only screen and (max-width: 768px) {
+    .chronologie {
+        text-align: center;
+    }
+}
 
-
+.personal {
+    padding-left: 60px;
+}
 
 
 .category {
