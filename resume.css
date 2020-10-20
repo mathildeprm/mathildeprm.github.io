@@ -4,15 +4,13 @@
     }
    body {
        margin-top: 1cm;
-       margin-left: 0cm;
-       margin-right: 1.6cm;
+       margin-left: 1cm;
+       margin-right: 1cm;
        -webkit-print-color-adjust: exact;
    }
 
 
-
-
-   tr{
+   tr {
     background-color:#d5ffc3 !important;
   }
 
@@ -28,8 +26,6 @@
        position: relative;
    }
 
-
-
    .progress:before {
        display: block;
        content: '';
@@ -41,6 +37,7 @@
        z-index: 0;
        border-bottom: 2rem solid #eeeeee;
    }
+
    .progress-bar {
        position: absolute;
        top: 0;
@@ -54,6 +51,7 @@
    div.job>h4, div.job>h5 {
        margin-block-end: initial;
    }
+
    div.job>h4 {
        margin-top: 5px;
    }
@@ -237,7 +235,7 @@ div.right {
  */
 
 #skills-languages {
-    border-right: 1px double #ddd;
+    border-left: 1px double #ddd;
 }
 #skills-languages h3 {
     padding-top: 10px;
