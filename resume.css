@@ -15,6 +15,7 @@
 
     #skills-languages h3 {
         font-size: 130%;
+ 
     }
 
 /* as per
@@ -89,10 +90,10 @@ h3.title {color: #980004;
 
 h3.title3 {color: #980004;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 25px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    margin-top:25px;
+    margin-top:15px;
 
 }
 
@@ -108,6 +109,13 @@ h4 {font-size: 20px;
     font-weight: bolder;
 }
 
+div.education>h4, div.education>h5 {
+    margin-block-end: initial;
+}
+div.education>h4 {
+    margin-top: 4px;
+}
+}
 .der {margin-bottom:25px;
 }
 
@@ -198,6 +206,9 @@ ul {
     }
 }
 
+
+
+
 .personal {
     padding-left: 60px;
 }
@@ -264,6 +275,13 @@ div.right {
 }
  */
 
+ ul.a {
+    list-style-type: circle;
+    margin-bottom: 2px;
+    margin-top:0px;
+}
+
+
 
 div.job>p {
     margin-bottom: 5px;
@@ -295,6 +313,7 @@ p {
 
 span.neutral {
     font-weight: normal;
+    font-size:18px;
 }
 .shiftright {
     text-indent: 20px;
