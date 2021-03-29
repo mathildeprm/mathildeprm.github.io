@@ -2,22 +2,24 @@
     @page {
         margin: 0;
     }
-    body {
-        margin-top: 1cm;
-        margin-left: 0cm;
-        margin-right: .8cm;
-        -webkit-print-color-adjust: exact;
-    }
+   body {
+       margin-top: 1cm;
+       margin-left: 0cm;
+        margin-right: 0cm;
+       -webkit-print-color-adjust: exact;
+   }
 
-    tr {
-        background-color:#d5ffc3 !important;
-    }
 
-    #skills-languages h3 {
-        font-size: 130%;
- 
-    }
 
+
+   tr{
+    background-color:#d5ffc3 !important;
+  }
+
+
+   #skills-languages h3 {
+       font-size: 130%;
+   }
 /* as per
  * https://stackoverflow.com/questions/44284361/bootstrap-progress-bar-is-not-shown-in-print-preview
  */
@@ -25,6 +27,8 @@
    .progress {
        position: relative;
    }
+
+
 
    .progress:before {
        display: block;
@@ -37,7 +41,6 @@
        z-index: 0;
        border-bottom: 2rem solid #eeeeee;
    }
-
    .progress-bar {
        position: absolute;
        top: 0;
@@ -51,18 +54,31 @@
    div.job>h4, div.job>h5 {
        margin-block-end: initial;
    }
-
    div.job>h4 {
        margin-top: 5px;
    }
 }
 
-/* -------------- */
+
+div.education>h4, div.education>h5 {
+    margin-block-end: initial;
+}
+div.education>h4 {
+    margin-top: 4px;
+}
+}
+
+#details {
+    align-items: right;
+    justify-content: right;
+    padding-right: 60px;
+}
+
+.col-2 chronologie italic {font-style: italic;}
 body {
     font-family: 'Raleway', sans-serif;
     padding-top: 13px;
 }
-
 
 h1 {
     font-size:27px;
@@ -90,10 +106,10 @@ h3.title {color: #980004;
 
 h3.title3 {color: #980004;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 23px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    margin-top:15px;
+    margin-top:25px;
 
 }
 
@@ -106,7 +122,7 @@ hr {width: 90%;
 }
 
 h4 {font-size: 20px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 div.education>h4, div.education>h5 {
@@ -122,11 +138,11 @@ div.education>h4 {
 .ed {margin-bottom: 15px;
 }
 
-h5 {font-size: 18px;
+h5 {font-size: 16px;
     font-weight: 600;
     font-style: italic;
     color: #323232;
-    margin-top: 5px;
+    margin-top: 2px;
     padding-bottom: 5px;
 
 }
@@ -154,7 +170,12 @@ h5 {font-size: 18px;
 
 h6 {font-size: 13px;}
 
-p {line-height: 1.2;}
+p {line-height: 1.2;
+    font-size: 14px;}
+
+.list-group>li.list-group-item  {
+    font-size:115%;
+}
 
 .alert.alert-secondary {
     padding: 6px;
@@ -173,16 +194,16 @@ p {line-height: 1.2;}
     font-size: 22px;
 }
 
+
+.smaller-shiftright {font-size: 14px;
+    text-indent: 10px;}
+
 ul {
     border-right:1px;
     border-right-color:grey;
 }
 
-.informations {
-    font-style: italic;
-    font-weight: 100;
-    font-size: 20px;
-}
+
 
 .name {
     font-weight: 500;
@@ -212,8 +233,6 @@ ul {
 .personal {
     padding-left: 60px;
 }
-
-
 .category {
     text-align: center;
     font-style: oblique;
@@ -221,6 +240,8 @@ ul {
 
 #skills-languages {
     border-left: 1px double #ddd;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 #skills-languages h3 {
     padding-top: 10px;
@@ -245,7 +266,7 @@ ul {
 
 .progress {
     height: 10px;
-    margin: 18px 10px;
+    margin: 18px 25px;
 }
 .progress-bar {
     height:10px;
@@ -275,13 +296,13 @@ div.right {
 }
  */
 
- ul.a {
-    list-style-type: circle;
-    margin-bottom: 4px;
-    margin-top:0px;
+#skills-languages h3 {
+    padding-top: 10px;
 }
 
-
+body {
+    padding-top: 13px;
+}
 
 div.job>p {
     margin-bottom: 5px;
@@ -296,7 +317,7 @@ h2.title {
 }
 
 .larger {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 700;
 }
 .normal {
@@ -313,7 +334,7 @@ p {
 
 span.neutral {
     font-weight: normal;
-    font-size:18px;
+    font-size: 16px;
 }
 .shiftright {
     text-indent: 20px;
