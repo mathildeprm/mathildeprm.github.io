@@ -144,7 +144,7 @@ div.education>h4 {
     margin-bottom: 15px;
 }
 
-h5, .function {
+h5, .function, .other {
     font-size: 16px;
     font-weight: 600;
     font-style: italic;
@@ -153,8 +153,12 @@ h5, .function {
     padding-bottom: 5px;
 }
 
-.neutral::before, .function::before {
+.minus::before {
     content: ' - '
+}
+
+.minus2::before {
+    content: ' -- '
 }
 
 #details {
