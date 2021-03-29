@@ -57,8 +57,9 @@
    div.job>h4 {
        margin-top: 5px;
    }
-}
+}  /* @media print */
 
+/* ------------------------------------------------------------- */
 
 div.education>h4, div.education>h5 {
     margin-block-end: initial;
