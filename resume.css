@@ -201,6 +201,7 @@ p {
 ul {
     border-right: 1px;
     border-right-color: grey;
+    list-style-type: circle;
 }
 .name {
     font-weight: 500;
