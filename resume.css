@@ -98,11 +98,12 @@ h3 {
     text-align:center;
 }
 
-h3.title {color: #980004;
-        font-weight: 600;
-        font-size: 25px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
+h3.title {
+    color: #980004;
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 h3.title3 {color: #980004;
@@ -114,7 +115,8 @@ h3.title3 {color: #980004;
 
 }
 
-hr {width: 90%;
+hr {
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top:5px;
@@ -122,7 +124,8 @@ hr {width: 90%;
     margin-bottom: 2px;
 }
 
-h4 {font-size: 20px;
+h4, .company {
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -132,20 +135,26 @@ div.education>h4, div.education>h5 {
 div.education>h4 {
     margin-top: 4px;
 }
-}
-.der {margin-bottom:25px;
+
+.der {
+    margin-bottom:25px;
 }
 
-.ed {margin-bottom: 15px;
+.ed {
+    margin-bottom: 15px;
 }
 
-h5 {font-size: 16px;
+h5, .function {
+    font-size: 16px;
     font-weight: 600;
     font-style: italic;
     color: #323232;
     margin-top: 2px;
     padding-bottom: 5px;
+}
 
+.neutral::before, .function::before {
+    content: ' - '
 }
 
 #details {
@@ -155,24 +164,29 @@ h5 {font-size: 16px;
     padding-right: 60px;
 }
 
-.date-work {font-size: 20px;
+.date-work {
+    font-size: 20px;
     font-weight: 500;
     padding-top:4px;
 }
 
-.date {font-size: 20px;
+.date {
+    font-size: 20px;
     font-weight: 500;
 }
 
-.period {font-size: 15px;
-         font-style: italic;
-         font-weight: lighter;
+.period {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 h6 {font-size: 13px;}
 
-p {line-height: 1.2;
-    font-size: 14px;}
+p {
+    line-height: 1.2;
+    font-size: 14px;
+}
 
 .list-group>li.list-group-item  {
     font-size:115%;
@@ -333,7 +347,7 @@ p {
     text-indent: 20px;
 }
 
-span.neutral {
+.neutral {
     font-weight: normal;
     font-size: 16px;
 }
