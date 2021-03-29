@@ -194,10 +194,6 @@ p {
     margin-bottom: 0px;
     font-size: 22px;
 }
-.smaller-shiftright {
-    font-size: 14px;
-    text-indent: 10px;
-}
 ul {
     border-right: 1px;
     border-right-color: grey;
@@ -314,9 +310,6 @@ p {
 .neutral {
     font-weight: normal;
     font-size: 16px;
-}
-.shiftright {
-    text-indent: 20px;
 }
 div.exp>div {
     padding-bottom: 10px;
