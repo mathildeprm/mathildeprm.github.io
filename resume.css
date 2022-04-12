@@ -75,7 +75,7 @@ div.education>h4 {
     f ont-style: italic;
 }
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: sans-serif;
     padding-top: 13px;
 }
 h1 {
@@ -98,14 +98,28 @@ h3.title {
     font-size: 25px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top:0px;
+    font-weight:initial;
 }
 h3.title3 {
     color: #980004;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 25px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    margin-top: 25px;
+    padding-top: 8px;
+    margin-top:8px;
+    font-weight:normal;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #323232;
+    margin-top: 2px;
+    padding-bottom: 3px;
+}
 }
 hr {
     width: 90%;
@@ -138,16 +152,15 @@ h5,
 .other {
     font-size: 16px;
     font-weight: 600;
-    font-style: italic;
     color: #323232;
     margin-top: 2px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .minus::before {
     content: ' - '
 }
 .minus2::before {
-    content: ' -- '
+    content: ' - '
 }
 #details {
     display: flex;
@@ -156,13 +169,14 @@ h5,
     padding-right: 60px;
 }
 .date-work {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     padding-top: 4px;
 }
 .date {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+    padding-top:5px;
 }
 .period {
     font-size: 15px;
@@ -170,7 +184,11 @@ h5,
     font-weight: lighter;
 }
 h6 {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 50;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 p {
     line-height: 1.2;
@@ -178,6 +196,7 @@ p {
 }
 .list-group>li.list-group-item {
     font-size: 115%;
+    padding-bottom: 2px;
 }
 .alert.alert-secondary {
     padding: 6px;
@@ -198,6 +217,8 @@ ul {
     border-right: 1px;
     border-right-color: grey;
     list-style-type: circle;
+    padding-bottom: 0px;
+    margin-bottom: 12px;
 }
 .name {
     font-weight: 500;
@@ -290,9 +311,10 @@ h2.title {
     width: 100%;
     text-align: left;
     margin-top: 2px;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
     font-weight: 500;
     margin-left: 30px;
+
 }
 .larger {
     font-size: 20px;
@@ -309,6 +331,7 @@ p {
 }
 .neutral {
     font-weight: normal;
+    font-style: italic;
     font-size: 16px;
 }
 div.exp>div {
