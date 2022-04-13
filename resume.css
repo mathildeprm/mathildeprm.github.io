@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 body {
     --red-headers: #980004;
 }
@@ -79,7 +81,7 @@ div.education>h4 {
     f ont-style: italic;
 }
 body {
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     padding-top: 13px;
 }
 h1 {
