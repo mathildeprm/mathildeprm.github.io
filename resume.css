@@ -1,3 +1,7 @@
+body {
+    --red-headers: #980004;
+}
+
 @media print {
     @page {
         margin: 0;
@@ -37,7 +41,7 @@
         bottom: 0;
         left: 0;
         z-index: 1;
-        border-bottom: 2rem solid #980004;
+        border-bottom: 2rem solid var(--red-headers);
         background-color: black;
     }
     div.job>h4,
@@ -94,7 +98,7 @@ h3 {
     text-align: center;
 }
 h3.title {
-    color: #980004;
+    color: var(--red-headers);
     font-weight: 600;
     font-size: 25px;
     padding-bottom: 0px;
@@ -104,7 +108,7 @@ h3.title {
     /*font-weight:initial; set above*/
 }
 h3.title3 {
-    color: #980004;
+    color: var(--red-headers);
     font-weight: 600;
     font-size: 25px;
     padding-bottom: 0px;
@@ -276,10 +280,11 @@ ul {
     height: 10px;
     margin: 18px 25px;
 }
+/* no longer used
 .progress-bar {
     height: 10px;
     color: #980004;
-}
+}*/
 .description_francais {
     font-style: italic;
 }
