@@ -139,7 +139,7 @@ hr {
 h4,
 .company {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
 div.education>h4,
 div.education>h5 {
@@ -176,8 +176,8 @@ h5,
     padding-right: 60px;
 }
 .date-work {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     padding-top: 4px;
 }
 .date {
@@ -188,7 +188,7 @@ h5,
 .period {
     font-size: 15px;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 300;
 }
 h6 {
     font-size: 15px;
@@ -327,7 +327,7 @@ h2.title {
 }
 .larger {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .normal {
     font-size: 1rem;
