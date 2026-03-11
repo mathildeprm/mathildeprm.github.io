@@ -345,3 +345,6 @@ p {
 div.exp>div {
     padding-bottom: 10px;
 }
+h5 {
+    font-weight: 500;
+}
