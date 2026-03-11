@@ -10,11 +10,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title>CV MATHILDE PARMENTELAT </title>
 
   <!--Link_CSS file-->
   <link type="text/css" rel="stylesheet" href="resume.css">
+  <!-- replacement for font-awesome -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => lucide.createIcons())</script>
 </head>
 
 <body>
@@ -28,14 +30,15 @@
 
 
       <div class="col-md-4" id="details">
-
         <span>
-          <span class="far fa-envelope"></span>
-          mathilde.parmentelat@essec.edu
+          <i data-lucide="mail"></i>&nbsp;mathilde.parmentelat@essec.edu
         </span>
         <span>
-          <span class="fas fa-mobile-alt"></span> +33 612 09 14 20
-          &nbsp;&nbsp; +44 785 185 0734
+          <i data-lucide="phone"></i>&nbsp;+44 785 185 0734
+        </span>
+        <span>
+          <i data-lucide="linkedin"></i>&nbsp;<a 
+            href="https://www.linkedin.com/in/mprmt/" target="_">mprmt</a>
         </span>
 
       </div>
@@ -220,9 +223,9 @@
 
         <br> <br>
 
-        <h3 id="linkedin"><a href="https://www.linkedin.com/in/mathilde-parmentelat-73968114b/"
+        <!-- <h3 id="linkedin"><a href="https://www.linkedin.com/in/mathilde-parmentelat-73968114b/"
           target="Blanc">linkedin.com/<br>in/mprmt/</a> </h3>
-
+ -->
           <!-- <li class="list-group-item">
               <a href="https://mathildeprm.github.io/" target="Blanc">
                 Github Resume
