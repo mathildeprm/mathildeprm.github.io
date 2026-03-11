@@ -71,14 +71,13 @@ div.education>h4 {
 }
 
 
-}
 #details {
     align-items: right;
     justify-content: right;
     padding-right: 60px;
 }
 .col-2 chronologie italic {
-    f ont-style: italic;
+    font-style: italic;
 }
 body {
     font-family: Roboto, sans-serif;
