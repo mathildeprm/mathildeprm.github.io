@@ -195,7 +195,7 @@ body {
 /* ── Print ── */
 @media print {
     @page {
-        margin: 1cm;
+        margin: 0.8cm 0.5cm 0.8cm 0.5cm;
     }
 
     body {
@@ -205,5 +205,19 @@ body {
 
     .page {
         max-width: none;
+        padding: 0 10px;
+    }
+
+    .entry {
+        grid-template-columns: 110px 1fr;
+        gap: 0 12px;
+    }
+
+    .date-main {
+        font-size: 13px;
+    }
+
+    .date-period {
+        font-size: 11px;
     }
 }
