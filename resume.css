@@ -208,6 +208,10 @@ body {
         padding: 0 10px;
     }
 
+    .page-break-before {
+        break-before: page;
+    }
+
     .entry {
         grid-template-columns: 110px 1fr;
         gap: 0 12px;
