@@ -117,9 +117,17 @@ body {
     color: var(--text-muted);
 }
 
-.dash::before {
+.entry-header span + span::before {
+    content: '\00a0\00a0\00a0|\00a0\00a0\00a0';
+    color: #999;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.interest span + span::before {
     content: ' \2013  ';
 }
+
 
 .content ul {
     margin: 4px 0 8px;
