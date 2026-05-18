@@ -5,9 +5,247 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CV MATHILDE ROY</title>
-  <link type="text/css" rel="stylesheet" href="resume.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>document.addEventListener('DOMContentLoaded', () => lucide.createIcons())</script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #980004;
+      --muted: #555;
+      --border: #ddd;
+      --date-col: 55px;
+      --sidebar-w: 95px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: Raleway, sans-serif;
+      margin: 0;
+      padding: 12px 0;
+      color: #1a1a1a;
+      line-height: 1.3;
+      font-size: 12px;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 25px;
+    }
+
+    /* HEADER */
+    #header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 6px 0 10px 20px;
+    }
+
+    .name {
+      font-weight: 500;
+      font-size: 26px;
+      margin: 0;
+      flex-shrink: 0;
+    }
+
+    #details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    #details a { color: inherit; text-decoration: none; }
+
+    .sidebar-linkedin {
+      margin-top: 8px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 11.5px;
+    }
+
+    .sidebar-linkedin a { color: #4a7eb5; text-decoration: underline; font-size: 11.5px; }
+
+    /* MAIN LAYOUT */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 1fr var(--sidebar-w);
+      gap: 0 0;
+    }
+
+    .main-content {
+      min-width: 0;
+      border-right: 1px solid var(--border);
+      padding-right: 18px;
+    }
+
+    .sidebar {
+      padding-left: 16px;
+      padding-top: 4px;
+    }
+
+    /* FULL WIDTH BOTTOM */
+    .full-width {
+      padding-top: 6px;
+    }
+
+    /* SECTION TITLES */
+    h2.section-title {
+      color: var(--red);
+      font-weight: 400;
+      font-size: 17px;
+      text-align: center;
+      margin: 0;
+      padding: 6px 0 4px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar h2.section-title {
+      font-size: 12px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .section-title.left {
+      text-align: left;
+      padding-left: 60px;
+      font-size: 15px;
+    }
+
+    /* ENTRIES */
+    .entry {
+      display: grid;
+      grid-template-columns: var(--date-col) 1fr;
+      gap: 0 12px;
+      padding: 5px 0 1px;
+    }
+
+    .date {
+      text-align: right;
+      padding-top: 2px;
+    }
+
+    .date-main {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .entry-header {
+      margin-bottom: 2px;
+    }
+
+    .company {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .entry-header span:nth-child(2) {
+      font-weight: 500;
+    }
+
+    .location {
+      font-style: italic;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .entry-header span + span::before {
+      content: '\00a0|\00a0';
+      color: #ccc;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .content ul {
+      margin: 2px 0 3px;
+      padding-left: 15px;
+      list-style-type: disc;
+    }
+
+    .content li {
+      margin-bottom: 2px;
+      font-size: 11.5px;
+    }
+
+    .content p {
+      margin: 2px 0 3px;
+      font-size: 11.5px;
+    }
+
+    /* COMPACT ENTRIES */
+    .compact-entry {
+      padding: 3px 0 1px;
+    }
+
+    .compact-header {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .compact-header span + span::before {
+      content: '\00a0|\00a0';
+      color: #ccc;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .compact-header .company {
+      font-size: 12.5px;
+    }
+
+    .date-inline {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--muted);
+      font-size: 11.5px;
+    }
+
+    .compact-desc {
+      margin: 1px 0 2px;
+      font-size: 11px;
+      color: #1a1a1a;
+      line-height: 1.4;
+    }
+
+    /* SIDEBAR */
+    .tag-list {
+      list-style: none;
+      padding: 0;
+      margin: 4px 0 10px;
+    }
+
+    .tag-list li {
+      padding: 2px 0;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .tag-sub {
+      display: block;
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    /* BOTTOM */
+    .interests-compact {
+      margin: 3px 0 5px;
+      line-height: 1.55;
+      font-size: 11px;
+    }
+
+    /* PRINT */
+    @media print {
+      @page { margin: 0.7cm 0.6cm; }
+      body { padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { max-width: none; padding: 0; }
+    }
+  </style>
 </head>
 
 <body>
@@ -15,277 +253,221 @@
 
     <!-- HEADER -->
     <header id="header">
-      <h1 class="name">MATHILDE ROY</h1>
+      <h1 class="name">Mathilde Roy</h1>
       <div id="details">
-        <span><i data-lucide="mail"></i>&nbsp;mathilde.parmentelat@essec.edu</span>
-        <span><i data-lucide="phone"></i>&nbsp;+44 785 185 0734</span>
-        <span><i data-lucide="linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/mprmt/" target="_blank">mprmt</a></span>
+        <span>mparmentelat@gmail.com</span>
+        <span>+44 785 185 0734</span>
+        <span>UK Settled Status</span>
       </div>
     </header>
 
-    <!-- WORK EXPERIENCE -->
-    <section>
-      <h2 class="section-title">WORK EXPERIENCE</h2>
+    <!-- MAIN LAYOUT: Work Experience + Sidebar only -->
+    <div class="main-layout">
 
-      <div class="entry">
-        <div class="date">
-          <span class="date-main">09/2024 - present</span>
-        </div>
-        <div class="content">
-          <div class="entry-header">
-            <span class="company">Beamery</span>
-            <span>Business Intelligence Platform Owner</span>
-            <span class="location">London, UK</span>
+      <!-- LEFT CONTENT: Work Experience only -->
+      <div class="main-content">
+
+        <section>
+          <h2 class="section-title">Work Experience</h2>
+
+          <div class="entry">
+            <div class="date"><span class="date-main">09/2024 – present</span></div>
+            <div class="content">
+              <div class="entry-header">
+                <span class="company">Beamery</span>
+                <span>Business Intelligence Platform Owner</span>
+                <span class="location">London, UK</span>
+              </div>
+              <ul>
+                <li>Eliminated 100% of manual financial reporting - previously 3-4 days of work per week - by building automated pipelines from NetSuite data populating reports, with robust checks in place; freeing up analysts time and giving leadership direct, real-time access to company health, cash analysis and financial modelling</li>
+                <li>Partnered with the Marketing team to build their first end-to-end analytics dashboard - tracking performance, campaign effectiveness and operational metrics - and developed a forecasting model to support budget planning and scenario analysis</li>
+                <li>Designed and delivered operational dashboards for the Customer Success team to monitor performance, flag at-risk customers and support strategic decision-making</li>
+                <li>Sole owner of the data repository: cleaned up legacy dbt models to reduce costs and redundancy, harmonised naming conventions, implemented coding best practices, and maintained the full pipeline</li>
+                <li>Led the migration from Tableau to Hex, using it as an opportunity to audit existing resources, re-validate definitions with each team, and fully rebuild the reporting suite - enabling self-service analytics and reducing ad-hoc reporting requests</li>
+                <li>Built a "Beamery's Impact" executive dashboard giving leadership an at-a-glance view of the customer base, product impact and trends over time - with early-warning signals for at-risk accounts</li>
+                <li>Designed a search engine quality dashboard to assess algorithmic performance - tracking whether results delivered to customers are relevant, actionable and acted upon</li>
+              </ul>
+            </div>
           </div>
-          <ul>
-            <li>Led working sessions with Finance, Marketing, and Operations teams to translate business needs and pain points into analytical solutions</li>
-            <li>Established BI best practices and guided teams on data usage and interpretation</li>
-            <li>Partnered closely with the Marketing team to identify analytical needs and built their first end-to-end analytics dashboard to track performance, campaign effectiveness, and operational metrics</li>
-            <li>Developed a data-driven marketing forecasting model based on historical data to support budget planning, allocation, and scenario analysis</li>
-            <li>Collaborated with Customer Success and Professional Services teams to design and implement operational dashboards to monitor performance and support strategic decision-making</li>
+
+          <div class="entry">
+            <div class="date"><span class="date-main">09/2022 – 09/2024</span></div>
+            <div class="content">
+              <div class="entry-header">
+                <span class="company">Amazon</span>
+                <span>Business Analyst, Compliance BI team</span>
+                <span class="location">London, UK</span>
+              </div>
+              <ul>
+                <li>Handled data requests from global compliance stakeholders, from ad-hoc analysis to full recurring report rebuilds</li>
+                <li>Enforced rigorous metric definition, challenging join logics and edge cases to ensure no ambiguity in reported metrics, backed by thorough end-user documentation</li>
+                <li>Owned end-to-end data pipelines (extract, transform, load, maintain), including data model design and optimisation and designed test frameworks to ensure reliability</li>
+                <li>Built new actionable business metrics from scratch, redefined and refined existing ones</li>
+                <li>Designed interactive Amazon QuickSight dashboards for ongoing decision-making</li>
+                <li>Built a predictive report for seller compliance verification workflows and account holds to minimise their impact on seller activity</li>
+                <li>Audited, and fully rebuilt the Risk &amp; Compliance Quality Metrics WBR, fixing inaccurate legacy logic and freeing up 2 days of manual work per week for the partner team</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="date"><span class="date-main">09/2021 – 09/2022</span></div>
+            <div class="content">
+              <div class="entry-header">
+                <span class="company">Re_Set</span>
+                <span>Data Consultant</span>
+                <span class="location">London, UK</span>
+              </div>
+              <ul>
+                <li>Built Re_Set's data capability, acting as the go-to consultant for data validation, analytics, and insight generation across projects</li>
+                <li>Led a deep-dive on ML investment opportunities for a mid-market PE fund, building an automated NLP pipeline to analyse large volumes of text and enhance research outputs</li>
+                <li>Single-handedly developed the company's carbon baseline and net-zero strategy, forming the foundation of its B Corp Certification</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="date"><span class="date-main">02/2021 – 08/2021</span></div>
+            <div class="content">
+              <div class="entry-header">
+                <span class="company">Tesla</span>
+                <span>Data Analyst, UK Supercharging Network</span>
+                <span class="location">London, UK</span>
+              </div>
+              <ul>
+                <li>Provided data insights to the team in charge of developing and optimising the Supercharging Network</li>
+                <li>Transformed unused internal data into visual reports (Python); produced a weekly insight summary around usage, profitability and industry scanning</li>
+                <li>Designed a UK-wide Tesla owner survey and delivered insights to the leadership</li>
+                <li>Created a dynamic market share and competitor analysis dashboard - still used years later</li>
+                <li>Built a usage and profitability prediction tool to support site investment decisions - still used years later</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /main-content -->
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+
+        <section>
+          <h2 class="section-title">Skills</h2>
+          <ul class="tag-list">
+            <li>SQL</li>
+            <li>Python
+              <span class="tag-sub">pandas, seaborn,<br>matplotlib, folium</span>
+            </li>
+            <li>dbt</li>
+            <li>git &amp; GitHub</li>
+            <li>HTML, CSS</li>
+            <li>Tableau</li>
+            <li>Amazon QuickSight</li>
+            <li>hex.tech</li>
           </ul>
-          <div class="sub-group">
-            <span class="sub-label">Adoption</span>
-            <ul>
-              <li>Delivered dashboards adopted across multiple departments, enabling self-service analytics and reducing ad-hoc reporting requests</li>
-              <li>Provided executive leadership with real-time visibility into financial and operational KPIs</li>
-              <li>Ensured data quality and consistency across reporting assets</li>
-              <li>Reduced manual reporting time by one day per week by transforming manual processes into automated, two-click workflows with robust checks in place</li>
-            </ul>
-          </div>
-          <div class="sub-group">
-            <span class="sub-label">Documentation</span>
-            <ul>
-              <li>Implemented scalable data pipelines and transformation layers to standardise NetSuite financial data for analytics use cases</li>
-              <li>Fully automated financial reporting</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        </section>
 
-      <div class="entry">
-        <div class="date">
-          <span class="date-main">09/2022 - 09/2024</span>
-        </div>
-        <div class="content">
-          <div class="entry-header">
-            <span class="company">Amazon</span>
-            <span>Business Analyst, Compliance BI team</span>
-            <span class="location">London, UK</span>
-          </div>
-          <ul>
-            <li>Managed data requests from compliance stakeholders by delivering reliable business metrics and actionable insights</li>
-            <li>Performed data extraction, visualisation, query optimisation, data model enhancement, report automation, and comprehensive data analysis</li>
-            <li>Built new actionable business metrics from scratch, redefined and refined existing ones</li>
-            <li>Designed and enhanced interactive data dashboards using Amazon QuickSight</li>
-            <li>Created BI resources by gathering and clarifying requirements, building data pipelines, and designing test frameworks</li>
-            <li>Developed predictive reports for seller compliance verification workflows to mitigate their impact on seller activity</li>
-            <li>Audited, rebuilt, and automated Risk &amp; Compliance Quality Metrics KPIs, fixing inaccurate legacy logic and boosting partner team capacity by 25%</li>
+        <section>
+          <h2 class="section-title">Languages</h2>
+          <ul class="tag-list">
+            <li>French <span class="tag-sub">(native)</span></li>
+            <li>English <span class="tag-sub">(fluent)</span></li>
+            <li>German <span class="tag-sub">(intermediary)</span></li>
+            <li>Spanish <span class="tag-sub">(intermediary)</span></li>
           </ul>
-        </div>
-      </div>
+        </section>
 
-      <div class="entry">
-        <div class="date">
-          <span class="date-main">09/2021 - 09/2022</span>
+        <div class="sidebar-linkedin">
+          <a href="https://www.linkedin.com/in/mprmt/" target="_blank">LinkedIn</a>
         </div>
-        <div class="content">
-          <div class="entry-header">
+
+      </aside>
+
+    </div><!-- /main-layout -->
+
+    <!-- FULL WIDTH: Internships + Education -->
+    <div class="full-width">
+
+      <section>
+        <h2 class="section-title left" style="margin-top: 4px;">Internships</h2>
+
+        <div class="compact-entry">
+          <div class="compact-header">
             <span class="company">Re_Set</span>
-            <span>Data Consultant</span>
-            <span class="location">London, UK</span>
+            <span>Strategy Consultant</span>
+            <span class="date-inline">07/2020 – 02/2021 · London, UK</span>
           </div>
-          <ul>
-            <li>Built and led Re_Set's data capability, acting as the go-to consultant for data validation, analytics, and insight generation to strengthen consulting engagements</li>
-            <li>Collected, structured, and analysed data to generate actionable insights, while automating workflows to support strategy consultants across projects</li>
-            <li>Led a deep-dive on Machine Learning investment opportunities for a mid-market Private Equity fund, building an automated pipeline using NLP to analyse large volumes of text and enhance research outputs</li>
-            <li>Single-handedly developed the company's carbon baseline and net-zero strategy, forming the foundation of its B Corp Certification sustainability requirements</li>
-          </ul>
+          <p class="compact-desc">Supported operations through process optimisation, built dynamic project management templates and led process automation initiatives to reduce manual work and drive efficiency.</p>
         </div>
-      </div>
 
-      <div class="entry">
-        <div class="date">
-          <span class="date-main">02/2021 - 08/2021</span>
-        </div>
-        <div class="content">
-          <div class="entry-header">
-            <span class="company">Tesla</span>
-            <span>Data Analyst, UK Supercharging Network</span>
-            <span class="location">London, UK</span>
+        <div class="compact-entry">
+          <div class="compact-header">
+            <span class="company">TempoCap</span>
+            <span>VC Analyst</span>
+            <span class="date-inline">01/2020 – 07/2020 · London, UK</span>
           </div>
-          <ul>
-            <li>In charge of Data &amp; Analytics to support the team in developing and optimising the Supercharging Network in the UK and Ireland</li>
-            <li>Transformed previously unused internal data into visual reports to drive the team's decisions using Python</li>
-            <li>Produced weekly reports with KPIs and insights on Network usage, profitability, and industry scanning</li>
-            <li>Designed and analysed a UK-wide survey of Tesla owners, presenting insights to support the optimisation of the charging network</li>
-            <li>Created a dynamic market share and competitor analysis dashboard leveraging external data, fully automated</li>
-            <li>Built a predictive tool to forecast profitability and usage of charging sites, enhancing team delivery and optimisation efforts over time</li>
-          </ul>
+          <p class="compact-desc">Investment sourcing, financial modelling, due diligence. Built a fully automated benchmarking tool scraping live public data into a structured Excel model - with financial KPIs by sector - to support investment decisions by comparison.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- INTERNSHIPS -->
-    <section class="compact-section">
-      <h2 class="section-title">INTERNSHIPS</h2>
-
-      <div class="compact-entry">
-        <div class="compact-header">
-          <span class="company">Re_Set</span>
-          <span>Consultant</span>
-          <span class="date-inline">07/2020 - 02/2021</span>
-        </div>
-        <ul>
-          <li>Supported operations through process optimisation and automation</li>
-          <li>Worked with the C-Suite of a global consumer healthcare group to create the group's purpose</li>
-          <li>Co-designed and facilitated a 2-day leadership workshop with C-suite and executive team</li>
-        </ul>
-      </div>
-
-      <div class="compact-entry">
-        <div class="compact-header">
-          <span class="company">TempoCap</span>
-          <span>VC Analyst</span>
-          <span class="date-inline">01/2020 - 07/2020</span>
-        </div>
-        <ul>
-          <li>Sourcing and screening of attractive potential investments matching TempoCap criteria</li>
-          <li>Conducted analytical tasks: financial modelling, valuations, and due diligence</li>
-          <li>Proactively built a comprehensive, dynamic benchmarking file using public companies to compare potential investments against industry standards and support investment decisions</li>
-        </ul>
-      </div>
-
-      <div class="compact-entry">
-        <div class="compact-header">
-          <span class="company">Integrity Advisory</span>
-          <span>M&amp;A Analyst</span>
-          <span class="date-inline">2019</span>
-        </div>
-        <ul>
-          <li>Deal screening, origination, sourcing, pitches, memos, financial modelling, research and contact with investors</li>
-        </ul>
-      </div>
-
-      <div class="compact-entry">
-        <div class="compact-header">
-          <span class="company">Ubisoft</span>
-          <span>IT Financial Planning Assistant</span>
-          <span class="date-inline">2018</span>
-        </div>
-        <ul>
-          <li>Proactive automation of monthly checks as part of month-end closing of worldwide IT activities</li>
-        </ul>
-      </div>
-
-      <div class="compact-entry">
-        <div class="compact-header">
-          <span class="company">Skeat</span>
-          <span>Data Mining and Data Analytics mission for the CEO and CFO</span>
-          <span class="date-inline">Freelance</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section>
-      <h2 class="section-title">EDUCATION</h2>
-
-      <div class="entry">
-        <div class="date">
-          <span class="date-main">2026</span>
-        </div>
-        <div class="content">
-          <div class="entry-header">
-            <span class="company">IBM</span>
+        <div class="compact-entry">
+          <div class="compact-header">
+            <span class="company">Integrity Advisory</span>
+            <span>M&amp;A Analyst</span>
+            <span class="date-inline">2019 · Paris, France</span>
           </div>
-          <p>Python for Data Science, AI &amp; Development</p>
+          <p class="compact-desc">Supported a newly founded boutique by bringing structure, templates and operational frameworks; financial modelling, deal screening, and investor outreach.</p>
         </div>
-      </div>
 
-      <div class="entry">
-        <div class="date">
-          <span class="date-main">2022</span>
-        </div>
-        <div class="content">
-          <div class="entry-header">
-            <span class="company">University of California, Davis</span>
-            <span class="location">Coursera</span>
+        <div class="compact-entry">
+          <div class="compact-header">
+            <span class="company">Ubisoft International</span>
+            <span>IT Financial Planning Assistant</span>
+            <span class="date-inline">2018 · Paris, France</span>
           </div>
-          <p>SQL for Data Science</p>
+          <p class="compact-desc">Pro-actively automated recurring reports, their checks, and account reconciliations, reducing manual work and space for error to the minimum to free-up the team's time and focus.</p>
         </div>
-      </div>
 
-      <div class="entry">
-        <div class="date">
-          <span class="date-main">2017 - 2021</span>
-        </div>
-        <div class="content">
-          <div class="entry-header">
-            <span class="company">ESSEC Business School</span>
+        <div class="compact-entry">
+          <div class="compact-header">
+            <span class="company">Skeat</span>
+            <span>Data Mining &amp; Analytics</span>
+            <span class="date-inline">Freelance · Paris, France</span>
           </div>
-          <p>Master of Sciences in Management, Grande École; Business Analytics</p>
+          <p class="compact-desc">Tech start-up in its first years with no analytics capabilities: delivered a Product Analytics deep dive and report to the CEO and CFO.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SKILLS & LANGUAGES -->
-    <section class="two-columns page-break-before">
-      <div class="column">
-        <h2 class="section-title">SKILLS</h2>
-        <ul class="tag-list">
-          <li>Data Analysis (SQL, Tableau, Hex)</li>  <!-- VBA, Observable -->
-          <li>Programming (Python: pandas, seaborn, matplotlib, folium)</li>
-          <li>git & GitHub</li>
-          <li>Notions of Dev (HTML, CSS)</li>
-        </ul>
-      </div>
-      <div class="column">
-        <h2 class="section-title">LANGUAGES</h2>
-        <ul class="tag-list">
-          <li>French (native)</li>
-          <li>English (fluent)</li>
-          <li>German (intermediary)</li>
-          <li>Spanish (intermediary)</li>
-        </ul>
-      </div>
-    </section>
+      <section>
+        <h2 class="section-title left">Education</h2>
 
-    <!-- VOLUNTEERING & LEADERSHIP -->
-    <section>
-      <h2 class="section-title">VOLUNTEERING &amp; LEADERSHIP</h2>
+        <div class="entry">
+          <div class="date"><span class="date-main">2017 – 2021</span></div>
+          <div class="content">
+            <div class="entry-header"><span class="company">ESSEC Business School</span></div>
+            <p>Master of Sciences in Management, Grande École; Business Analytics</p>
+          </div>
+        </div>
 
-      <div class="interest">
-        <span class="company">EkWateur</span>
-        <span>French Tech 120</span>
-        <span class="location">Paris, France</span>
-        <span>Shadowing with the co-founder and CEO for a week</span>
-      </div>
+        <div class="entry">
+          <div class="date"><span class="date-main">Courses</span></div>
+          <div class="content">
+            <p>SQL for Data Science (University of California, Davis - Coursera) · Python for Data Science, AI &amp; Development (IBM) · AI for Everyone (Andrew Ng - DeepLearning.AI)</p>
+          </div>
+        </div>
+      </section>
 
-      <div class="interest">
-        <span class="company">Extrem' ESSEC</span>
-        <span>Student Association</span>
-        <span>Treasurer, organisation of events such as Mountain Climbing (Mont Grand Paradis, Mont Blanc)</span>
-      </div>
+      <section>
+        <h2 class="section-title left">Interests &amp; Activities</h2>
+        <p class="interests-compact">
+          <strong>Valdocco</strong> - Educator in a deprived neighbourhood, academic support &amp; mediation, Nice ·
+          <strong>EkWateur</strong> (French Tech 120) - Shadowing with the co-founder and CEO for a week ·
+          <strong>Tutoring:</strong> Finance &amp; maths, Piano, English, German and French ·
+          <strong>Extrem' ESSEC</strong> - Treasurer; organised mountain climbing expeditions (Mont Grand Paradis, Mont Blanc) ·
+          <strong>Creative:</strong> Sewing, crochet ·
+          <strong>Music:</strong> Piano, organ &amp; clarinet (3rd cycle, Conservatory of Nice)
+        </p>
+      </section>
 
-      <div class="interest">
-        <span class="company">Valdocco</span>
-        <span>Social Association</span>
-        <span class="location">Nice, France</span>
-        <span>Educator in a deprived neighbourhood, academic support &amp; mediation</span>
-      </div>
-    </section>
-
-    <!-- INTERESTS -->
-    <section>
-      <h2 class="section-title">INTERESTS</h2>
-      <p class="interests-compact">
-        <strong>Tutoring:</strong> Finance &amp; maths (undergraduates), Piano, English, German and French
-        · <strong>Music:</strong> Piano, organ (3rd cycle), clarinet (3rd cycle) at the Conservatory of Nice
-        · <strong>Sport:</strong> Mountain climbing, snowboard, wakeboard, boxing
-        · <strong>Creative:</strong> Sewing
-      </p>
-    </section>
+    </div>
 
   </div>
 </body>
